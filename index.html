@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ópera</title>
+  <meta name="description" content="Corretaje con estilo, confianza y resultados." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#0b2239;
+      --gold:#c8a31a;
+      --sky:#bfe8ff;
+    }
+    body{margin:0;font-family:Montserrat,Arial,sans-serif;color:#0f172a;background:white}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    .nav{background:var(--navy);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;color:white}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+    .brand img{width:40px}
+    .btn{background:var(--gold);color:var(--navy);padding:10px 16px;border-radius:999px;font-weight:700}
+
+    .hero{background:var(--navy);color:white;display:grid;place-items:center;padding:80px 20px;text-align:center}
+    .hero h1{font-size:clamp(28px,4vw,42px);margin:0 0 10px}
+    .hero p{opacity:.9;font-size:18px;margin-bottom:24px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+
+    section{padding:60px 20px;text-align:center}
+    .social{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+    .social a{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e0e7ef;padding:10px 16px;border-radius:14px;font-weight:600;color:var(--navy);transition:.2s}
+    .social a:hover{box-shadow:0 4px 10px rgba(0,0,0,.1)}
+    .social svg{width:20px;height:20px}
+
+    footer{background:var(--navy);color:#cfe8ff;padding:20px;text-align:center;font-size:14px}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/logo-opera.png" alt="Logo Ópera"/>
+      <span>Ópera</span>
+    </div>
+    <a class="btn" href="#contacto">Contáctanos</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Corretaje con estilo, confianza y resultados</h1>
+    <p>Encuentra las propiedades más recientes y oportunidades actualizadas directamente en nuestras redes.</p>
+    <div class="cta">
+      <a class="btn" href="#contacto">Contáctanos</a>
+    </div>
+  </header>
+
+  <section id="contacto">
+    <h2>Síguenos y contáctanos</h2>
+    <p>Conoce nuestras propiedades disponibles y servicios a través de nuestras redes sociales.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/opera.propiedades/" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 2.25h9a5.25 5.25 0 0 1 5.25 5.25v9a5.25 5.25 0 0 1-5.25 5.25h-9A5.25 5.25 0 0 1 2.25 16.5v-9A5.25 5.25 0 0 1 7.5 2.25Zm9.75 3a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM12 7.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"/></svg>
+        <span>@opera.propiedades</span>
+      </a>
+      <a href="https://www.facebook.com/operapropiedades" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.3V12h2.3V9.7c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.5.7-1.5 1.4V12h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12Z"/></svg>
+        <span>Opera Propiedades</span>
+      </a>
+      <a href="https://wa.me/56935611672?text=Hola%20Ópera,%20quiero%20más%20información" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M20.5 3.5a11 11 0 0 0-16 14.9L3 22l3.8-1.4A11 11 0 1 0 20.5 3.5Zm-8.2 3a6.6 6.6 0 0 0-5.6 9.9l.3.6-1.5.6 1.6-.6.6.3A6.6 6.6 0 1 0 12.3 6.5Zm3.8 8.5c-.2.5-1 1-1.4 1-.4 0-.7 0-1.2-.2-2.1-.9-3.5-3.1-3.6-3.2-.1-.2-.9-1.2-.9-2s.6-1.1.8-1.2c.2 0 .4 0 .6.1h.4c.1 0 .3.5.4.7.1.2.2.4.1.6 0 .2-.2.3-.3.5-.1.1-.2.2-.1.4.2.4.6 1 .9 1.3.6.7 1.1.9 1.3 1 .2.1.3.1.5 0 .2-.1.3-.2.5-.4.2-.2.4-.2.5-.1.2.1 1.2.6 1.4.7.2.1.4.2.4.3Z"/></svg>
+        <span>+56 9 3561 1672</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> Ópera. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
