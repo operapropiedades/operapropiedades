@@ -10,11 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --navy:#0b2239;
+      --navy:#001b3d; /* color del logo */
       --gold:#c8a31a;
       --sky:#bfe8ff;
     }
-    body{margin:0;font-family:Montserrat,Arial,sans-serif;color:#0f172a;background:white}
+    body{
+      margin:0;
+      font-family:Montserrat,Arial,sans-serif;
+      color:white;
+      background-color:#001b3d; /* fondo igual al logo */
+    }
     a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block}
 
@@ -27,7 +32,7 @@
     .hero h1{font-size:clamp(28px,4vw,42px);margin:0 0 10px}
     .hero p{opacity:.9;font-size:18px;margin-bottom:24px}
 
-    section{padding:60px 20px;text-align:center}
+    section{padding:60px 20px;text-align:center;background:white;color:#0f172a;}
     .social{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:30px}
     .social a{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e0e7ef;padding:10px 16px;border-radius:14px;font-weight:600;color:var(--navy);transition:.2s}
     .social a:hover{box-shadow:0 4px 10px rgba(0,0,0,.1)}
@@ -42,7 +47,8 @@
       <img src="logo-opera.png" alt="Logo Ópera"/>
       <span>Ópera Propiedades</span>
     </div>
-    <a class="btn" href="#contacto">Contáctanos</a>
+    <a class="btn" href="mailto:contacto.operapropiedades@gmail.com">Contáctanos</a>
+
   </nav>
 
   <header class="hero">
