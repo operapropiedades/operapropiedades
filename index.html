@@ -39,6 +39,49 @@
     .social svg{width:20px;height:20px}
 
     footer{background:var(--navy);color:#cfe8ff;padding:20px;text-align:center;font-size:14px}
+
+    /* ===== Responsive para móviles ===== */
+    @media (max-width: 600px) {
+      .nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+      .brand img{ width:90px; }
+      .brand span{ font-size:18px; }
+      .btn{
+        font-size:14px;
+        padding:8px 14px;
+      }
+    }
+
+    /* ===== Botón flotante WhatsApp ===== */
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 28px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-float svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
   </style>
 </head>
 <body>
@@ -48,7 +91,6 @@
       <span>Ópera Propiedades</span>
     </div>
     <a class="btn" href="mailto:contacto.operapropiedades@gmail.com">Contáctanos</a>
-
   </nav>
 
   <header class="hero">
@@ -80,6 +122,12 @@
     </div>
   </section>
 
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/56935611672?text=Hola%20Ópera,%20quiero%20más%20información" 
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.003 3.004A12.994 12.994 0 003.004 16c0 2.281.584 4.517 1.694 6.491L3 29l6.641-1.671A12.977 12.977 0 0016 29.004 12.994 12.994 0 0029 16.003C29 8.826 23.18 3.004 16.003 3.004zm0 23.49a10.44 10.44 0 01-5.344-1.488l-.384-.229-3.94.992 1.042-3.847-.251-.396A10.49 10.49 0 0116 5.56c5.783 0 10.486 4.703 10.486 10.486 0 5.784-4.703 10.486-10.486 10.486zm5.802-7.844c-.316-.158-1.869-.921-2.159-1.025-.289-.105-.5-.158-.711.158-.21.316-.815 1.025-1.001 1.236-.184.21-.368.237-.684.079-.316-.158-1.334-.492-2.543-1.57-.94-.838-1.574-1.872-1.758-2.188-.184-.316-.02-.487.138-.645.143-.143.316-.368.474-.552.158-.184.21-.316.316-.527.105-.21.053-.395-.026-.553-.079-.158-.711-1.71-.975-2.343-.256-.615-.518-.53-.711-.54l-.605-.01c-.184 0-.484.07-.737.368-.252.316-.966.945-.966 2.307 0 1.362.989 2.676 1.126 2.861.138.184 1.946 2.977 4.719 4.174.66.285 1.175.454 1.577.582.662.21 1.264.18 1.74.11.531-.079 1.869-.758 2.134-1.49.263-.731.263-1.357.184-1.49-.079-.132-.289-.21-.605-.368z"/></svg>
+  </a>
+
   <footer>
     © <span id="y"></span> Ópera Propiedades. Todos los derechos reservados.
   </footer>
@@ -89,3 +137,4 @@
   </script>
 </body>
 </html>
+
